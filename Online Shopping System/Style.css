@@ -1,0 +1,20 @@
+img:hover{
+            transform: scale(1.1);
+            border: 3px solid black; 
+        }
+    video:hover{
+            transform: scale(1.1);
+            border: 3px solid black;
+        }
+        button:hover {
+            background-color: rgb(237, 77, 226);
+        }
+
+        #mobile{
+            background-color: rgb(191, 153, 225);
+
+        }
+        h1{
+            color: rgb(234, 85, 11);
+        }
+        
