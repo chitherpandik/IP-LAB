@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking  System </title>
+</head>
+<body>
+    <header><center><h1><p><img src="logo.jpg" width="40" height="40"> BOOKING<img src="logo.jpg" width="40" height="40"></p></h1></header></center>
+    <hr>
+    <center>
+    <img src="Ticket.jpg" width="1590" height="300"></center>
+    <nav align="center">
+        
+        <p><a href="#movie">   HOME | </a>
+            
+            <a href="#price">       MOVIE |  </a>
+            <a Href="#book">   BOOKING | </a>
+
+            <a Href="#rule">RULE</a>
+        
+        
+        </p>
+        
+        
+    </nav>
+    <hr>
+    <section id="movie">
+    <table border="1" cellpadding="5" align="center">
+        <tr>
+            <th><img src="Aaryan1.jpg" width="200" height="200" ><br><p> Aaryan </p><br><p>Language :Tamil </p><button href="#book" > BOOKING</button></th>
+            <th><img src="Beast.jpg" width="200" height="200" ><br><p> Beast </p><br><p>Language :Tamil & English </p><button href="#book" > BOOKING</button></th>
+            <th><img src="dude.jpg"  width="200" height="200"><br><p> Dude </p><br><p>Language :Tamil & English  </p><button href="#book" > BOOKING</button></th>
+            <th><img src="Vikram.jpg" width="200" height="200" ><br><p> Vikram </p><br><p>Language :Tamil & English  </p><button href="#book" > BOOKING</button></th>
+            <th><img src="3 movie.jpg" width="200" height="200" ><br><p> 3 Movie</p><br><p>Language :Tamil & English  </p><button href="#book" > BOOKING</button></th>
+          
+        </tr>
+    </table>
+    </section>
+    <section id="rule" >
+        <h2 align="center"> RULES</h2>
+        
+        <table border="1" cellpadding="5" align="center">
+        <tr>
+            <td><ul><li>
+
+            Tickets are subject to availability and are booked on a first-come, first-served basis.</li><br>
+            <li>Please verify the movie name, show date, show time, theater, and seat selection before confirming your booking.</li> </td>
+            <td><ul><li>A booking is confirmed only after successful payment.</li><br><li>The customer is responsible for providing accurate contact details to receive booking confirmations and updates.</li></td>
+            <td><ul><li>Customers must comply with the movie's age classification.</li><br><li> Valid ID may be required for age-restricted films.</li><br></td>
+        </tr>
+        </table>
+    </section><hr>
+    <section align="center" id="price">
+        <h2>MOVIE PRICES</h2>
+        <table border="1" cellpadding="5" width="1000"height="400" align="center">
+            <tr>
+                <th>SNO</th>
+                <th>Movie</th>
+                <th> First Class</th>
+                <th>Second Class</th>
+                <th>Third Class</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>3 Movie</td>
+                <td> 1000</td>
+                <td>750</td>
+                <td>500</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Beast</td>
+                <td> 1200</td>
+                <td>800</td>
+                <td>600</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dude</td>
+                <td> 1300</td>
+                <td>900</td>
+                <td>700</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Vikram</td>
+                <td> 900</td>
+                <td>600</td>
+                <td>250</td>
+
+            </tr>
+
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2 align="center" id="book">BOOKING </h2>
+        <form><center>
+            <label>Name:</label>
+            <input type="text" placeholder="ENTER THE NAME" required><br><br>
+            <label>Age:</label>
+            <input type="number" min="1" max="120"><br><br>
+            <label>Movie Name:</label>
+            <select>
+                <option>3 Movie</option>
+                <option>Aaryan</option>
+                <option>Dude</option>
+                <option>Beast</option>
+                <option>Vikram</option>
+            </select><br><br>
+            <label>Time:</label>
+            <select>
+                <option>9:00PM to 12:30PM</option>
+                <option>1:00 to 3:30 PM</option>
+                <option>4:00 PM to 7:30PM</option>
+                <option>8:00 PM to 10:30 PM</option>
+                
+            </select><br>
+            <label>Date:</label>
+            <input type="date" ><br><br>
+            <label>Number of Seats:</label>
+            <input type="number" min="1" max="120"><br><br>
+           
+            <label>Class Type :</label>
+            <input type="radio" name="class"> FIRST CLASS
+            <input type="radio" name="class"> SECOND CLASS
+            <input type="radio" name="class"> THIRD CLASS<BR><br>
+             <button type="submit">BOOK</button>
+            <button type="reset">Reset</button>
+                    </center>
+        </form>
+    </section>
+
+    
+</body>
+</html>
