@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal User Registration Form</title>
+</head>
+<style>
+    input{
+        border: 1px solid #ccc;
+        padding: 5px;   
+       
+        
+    }
+    button:hover{
+        padding: 10px 20px;
+        background-color: #5078d6;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+  
+    
+</style>
+<script>
+    function validateForm() {
+        let errors = [];
+        let name=document.getElementById("name").value.trim();
+        let email=document.getElementById("email").value.trim();
+        let password=document.getElementById("password").value;
+        let confirmPassword=document.getElementById("confirmPassword").value;
+        let phone=document.getElementById("phone").value.trim();
+        let qualification=document.getElementById("qualification").value;
+        let resume=document.getElementById("resume").value;
+
+        let namePattern = /^[A-Za-z ]+$/;
+        if (name === "") {
+            errors.push("Please enter your name");
+        } 
+        else if (!namePattern.test(name)) {
+            errors.push("Please enter a valid name");
+        }
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === "") {
+          errors.push("Please enter your email");
+        } 
+        else if (!emailPattern.test(email)) {
+            errors.push("Please enter a valid email");
+        }
+        if (password === "") {
+            errors.push("Please enter your password");
+        }
+        if (confirmPassword === "") {
+             errors.push("Please confirm your password");
+        } 
+        else if (password !== confirmPassword) {
+            errors.push("Passwords do not match");
+        }
+        let phonePattern = /^[0-9]{10}$/;
+
+        if (phone === "") {
+           errors.push("Please enter your phone number");
+        } 
+        else if (!phonePattern.test(phone)) {
+            errors.push("Please enter a valid 10-digit phone number");
+        }
+        if (qualification === "") {
+            errors.push("Please select your qualification");
+        }
+        let resumePattern = /\.(pdf|doc|docx)$/i;
+
+        if (resume === "") {
+            errors.push("Please upload your resume");
+        } 
+        else if (!resumePattern.test(resume)) {
+            errors.push("Please upload a valid resume file");
+        }
+        if (errors.length > 0) {
+            alert(errors.join("\n"));
+            return false;
+        }
+        alert("Registration Successful!");
+        return true;
+    }
+
+</script>
+<body style="background-image: url('bg2.jpg'); background-size: cover;" >
+    <h1 align="center" >Job Portal User Registration Form</h1>
+    <br><br><br><br>
+    <form onsubmit="return validateForm()" border="1" cellpadding="20" cellspacing="0" style="border-collapse: collapse; ">
+        <table align="center" border="1" cellpadding="20" cellspacing="0" style="border-collapse: collapse; border: 2px solid #dce4f5;" >
+            <th style="background-image: url('bg4.jpg'); background-size: cover;" >
+                <div>
+                    <label>Name:</label>
+                    <input type="text" id="name" placeholder="Enter your Full Name" required border="1">
+
+                </div><br>
+                <div>
+                    <label>Email:</label>
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                </div><br>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" id="password" placeholder="Enter your Password" required>
+                </div><br>
+                <div>
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your Password" required>
+                </div><br>
+                <div>
+                    <label>Phone Number:</label>
+                    <input type="tel" id="phone" placeholder="Enter your Phone Number" required>    
+                </div><br>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </div><br>
+            
+                <div>
+                    <label>Qualification:</label>
+                    <select id="qualification" required>
+                        <option >Select your Qualification</option>
+                        <option >B.E</option>
+                        <option >B.Tech</option>
+                        <option >M.E</option>
+                        <option >M.Tech</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label>Skills:</label>
+                    <input type="checkbox" name="skills" value="Java"> Java
+                    <input type="checkbox" name="skills" value="Python"> Python
+                    <input type="checkbox" name="skills" value="C++"> C++
+                    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+
+                </div><br>
+                <div>
+                    <label>Upload Resume:</label>
+                    <input type="file" id="resume"required>
+                </div><br>
+                <div>
+                    <button type="submit"  id="submit">SUBMIT</button>
+                    <button type="reset" id="reset">RESET</button>
+                </div>  
+            </th>
+            
+        </table>
+            </form>
+</body>
+</html>
