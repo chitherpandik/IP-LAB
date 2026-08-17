@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Online Exam </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center>
+            <h1> Online Exam </h1>
+            <hr>
+    
+        <form action="ExamServlet" method="GET">
+            <div>
+                 Enter the Name:
+                 <input type="text" name="name">
+                <h3><p>1)The attribute sets the text direction as related to the lang attribute:</p></h3>
+                <br>
+               
+                <input type="radio" name="q1" value="lang">lang
+                <input type="radio" name="q1" value="Sub">sub
+                <input type="radio" name="q1" value="dir">dir
+                <input type="radio" name="q1" value="ds">ds
+                
+                <h3><p>2) Which of the following tag is used for inserting the largest heading in HTML:</p></h3>
+                <br>
+                
+                <input type="radio" name="q2" value="h3">h3
+                <input type="radio" name="q2"  value="h1">h1
+                <input type="radio" name="q2"  value="h5">h5
+                <input type="radio" name="q2"  value="h6">h6
+                <br>
+                <h3> <p>3)What is 3*3:</p></h3>
+                <input type="text" name="q3" required>
+                <br>
+                <h3> <p>4)What is 7+10:</p></h3>
+                <input type="text" name="q4" required>
+                
+            </div>
+            <br>
+            <br>
+            <button type="submit" >SUBMIT</button>
+        </form>
+        </center>
+    </body>
+</html>
