@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping System</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <center>
+            <h1>
+                <img src="logo1.jpg" width="80" height="50">
+                Online Shopping
+                <img src="logo1.jpg" width="80" height="50">
+            </h1>
+        </center>
+    </header>
+
+    <hr>
+
+    <!-- PRODUCT LIST -->
+    <h1 align="center">PRODUCT LIST</h1>
+
+    <center>
+        <img src="image2.jpg"
+             alt="Products"
+             width="1000"
+             height="300"
+             usemap="#workmap">
+    </center>
+
+    <!-- IMAGE MAP -->
+    <map name="workmap">
+
+        <area shape="rect"
+              coords="445,65,919,605"
+              alt="Laptop"
+              href="#laptop">
+
+        <area shape="rect"
+              coords="961,57,1518,613"
+              alt="Headphone"
+              href="#head">
+
+        <area shape="rect"
+              coords="25,55,405,592"
+              alt="Mobile"
+              href="#mobile">
+
+    </map>
+
+    <hr>
+
+    <!-- HEADPHONE SECTION -->
+    <section id="head">
+
+        <h2 align="center">HEADPHONE</h2>
+
+        <table border="1" align="center">
+
+            <tr>
+
+                <th>
+                    <div id="dragElement1"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="h1.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>Headphone 1</p>
+                        <p>Price: ₹700</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="head.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement2"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="h2.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>Headphone 2</p>
+                        <p>Price: ₹800</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="head.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement3"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="h3.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>Headphone 3</p>
+                        <p>Price: ₹900</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="head.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- MOBILE SECTION -->
+    <section id="mobile">
+
+        <h2 align="center">MOBILE</h2>
+
+        <table border="1" align="center">
+
+            <tr>
+
+                <th>
+                    <div id="dragElement4"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="M1.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>iPhone</p>
+                        <p>Price: ₹110700</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="mobile.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement5"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="m2.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>VIVO</p>
+                        <p>Price: ₹57000</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="mobile.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement6"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="m3.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>OPPO</p>
+                        <p>Price: ₹37000</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="mobile.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- LAPTOP SECTION -->
+    <section id="laptop">
+
+        <h2 align="center">LAPTOP</h2>
+
+        <table border="1" align="center">
+
+            <tr>
+
+                <th>
+                    <div id="dragElement7"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="l1.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>HP</p>
+                        <p>Price: ₹70000</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="laptop.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement8"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="l2.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>LQ</p>
+                        <p>Price: ₹80000</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="laptop.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+                <th>
+                    <div id="dragElement9"
+                         draggable="true"
+                         ondragstart="drag(event)">
+
+                        <img src="l3.jpg" height="200" width="300">
+
+                        <br>
+
+                        <p>Acer</p>
+                        <p>Price: ₹90000</p>
+
+                        <video width="300" height="150" controls>
+                            <source src="laptop.mp4" type="video/mp4">
+                        </video>
+
+                    </div>
+                </th>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- ORDER CARD -->
+    <section>
+
+        <h2 align="center">ORDER CARD</h2>
+
+        <center>
+
+            <div id="droptarget"
+                 ondrop="drop(event)"
+                 ondragover="allowDrop(event)"
+                 style="
+                 width:700px;
+                 height:500px;
+                 border:2px dashed black;
+                 overflow-y:auto;">
+
+            </div>
+
+        </center>
+
+        <br>
+
+        <center>
+            <p>
+                Drag your selected product into the Order Card.
+            </p>
+        </center>
+
+    </section>
+
+    <hr>
+
+    <!-- CUSTOMER DETAILS FORM -->
+    <section>
+
+        <h2 align="center">CUSTOMER DETAILS</h2>
+
+        <center>
+
+            <form action="order.jsp" method="post">
+
+                <label>Name:</label>
+
+                <input type="text"
+                       name="name"
+                       required>
+
+                <br><br>
+
+
+                <label>Email:</label>
+
+                <input type="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+
+                <label>Phone:</label>
+
+                <input type="text"
+                       name="phone"
+                       required>
+
+                <br><br>
+
+
+                <label>Address:</label>
+
+                <textarea name="address"
+                          rows="3"
+                          cols="30"
+                          required>
+                </textarea>
+
+                <br><br>
+
+
+                <label>Order Price:</label>
+
+                <input type="number"
+                       name="price"
+                       placeholder="Enter price"
+                       required>
+
+                <br><br>
+
+
+                <label>Payment:</label>
+
+                <input type="radio"
+                       name="payment"
+                       value="Cash"
+                       required>
+
+                Cash
+
+                <input type="radio"
+                       name="payment"
+                       value="UPI">
+
+                UPI
+
+                <br><br>
+
+
+                <input type="submit"
+                       value="Place Order">
+
+                &nbsp;&nbsp;
+
+                <input type="reset"
+                       value="Reset">
+
+            </form>
+
+        </center>
+
+    </section>
+
+    <hr>
+
+    <!-- GEOLOCATION -->
+    <section>
+
+        <center>
+
+            <h2>GEOLOCATION</h2>
+
+            <button onclick="getLocation()">
+                GET LOCATION
+            </button>
+
+            <p id="demo"></p>
+
+        </center>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // DRAG FUNCTION
+
+        function drag(ev) {
+
+            ev.dataTransfer.setData(
+                "text",
+                ev.currentTarget.id
+            );
+
+        }
+
+
+        // ALLOW DROP
+
+        function allowDrop(ev) {
+
+            ev.preventDefault();
+
+        }
+
+
+        // DROP FUNCTION
+
+        function drop(ev) {
+
+            ev.preventDefault();
+
+            var data =
+                ev.dataTransfer.getData("text");
+
+            var original =
+                document.getElementById(data);
+
+            var copy =
+                original.cloneNode(true);
+
+            copy.removeAttribute("id");
+
+            copy.draggable = false;
+
+            document
+                .getElementById("droptarget")
+                .appendChild(copy);
+
+        }
+
+
+        // GEOLOCATION
+
+        function getLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+                    showPosition
+                );
+
+            } else {
+
+                document.getElementById("demo").innerHTML =
+                    "Geolocation is not supported by this browser.";
+
+            }
+
+        }
+
+
+        function showPosition(position) {
+
+            document.getElementById("demo").innerHTML =
+                "Latitude: " +
+                position.coords.latitude +
+                "<br>" +
+                "Longitude: " +
+                position.coords.longitude;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
