@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <books>
+<book>
+<bid>101</bid>
+<bname>Harry Potter</bname>
+<author>JK Rowlin</author>
+<price>1000</price>
+</book>
+<book>
+<bid>102</bid>
+<bname>Atomic habits</bname>
+<author>Chither</author>
+<price>700</price>
+</book>
+<book>
+<bid>103</bid>
+<bname>Mahabarat</bname>
+<author>praveen</author>
+<price>850</price>
+</book>
+<book>
+<bid>104</bid>
+<bname>Spider-Man</bname>
+<author>Tom holland</author>
+<price>850</price>
+</book>
+</books>
+
+</root>
