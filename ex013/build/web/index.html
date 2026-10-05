@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+<title>Online Shopping - Book Viewer</title>
+<script>
+
+    function loadBooks() {
+
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+
+            if (this.readyState == 4 && this.status == 200) {
+
+                var xml = this.responseXML;
+
+                var books = xml.getElementsByTagName("book");
+
+                var output = "<h2>Book Details</h2>";
+
+                output += "<table border='1' cellpadding='10'>";
+
+                output += "<tr>";
+                output += "<th>ID</th>";
+                output += "<th>Title</th>";
+                output += "<th>Author</th>";
+                output += "<th>Category</th>";
+                output += "<th>Price</th>";
+                output += "</tr>";
+
+                for (var i = 0; i < books.length; i++) {
+
+                    var id =
+                        books[i].getElementsByTagName("id")[0]
+                        .childNodes[0].nodeValue;
+
+                    var title =
+                        books[i].getElementsByTagName("title")[0]
+                        .childNodes[0].nodeValue;
+
+                    var author =
+                        books[i].getElementsByTagName("author")[0]
+                        .childNodes[0].nodeValue;
+
+                    var category =
+                        books[i].getElementsByTagName("category")[0]
+                        .childNodes[0].nodeValue;
+
+                    var price =
+                        books[i].getElementsByTagName("price")[0]
+                        .childNodes[0].nodeValue;
+
+                    output += "<tr>";
+
+                    output += "<td>" + id + "</td>";
+                    output += "<td>" + title + "</td>";
+                    output += "<td>" + author + "</td>";
+                    output += "<td>" + category + "</td>";
+                    output += "<td>" + price + "</td>";
+
+                    output += "</tr>";
+                }
+
+                output += "</table>";
+
+                document.getElementById("bookData").innerHTML = output;
+            }
+        };
+
+        xhttp.open("GET", "books.xml", true);
+
+        xhttp.send();
+    }
+
+</script>
+</head> <body>
+<h1>Online Shopping - Book Viewer</h1>
+<button onclick="loadBooks()">
+    Load Books
+</button>
+<br><br>
+<div id="bookData"></div>
+</body>
+</html>

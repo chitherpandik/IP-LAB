@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?> <books>
+<book>
+    <id>101</id>
+    <title>Java Programming</title>
+    <author>Chither</author>
+    <category>Programming</category>
+    <price>550.00</price>
+</book>
+
+<book>
+    <id>102</id>
+    <title>Web Development Basics</title>
+    <author>sanjay</author>
+    <category>Web Development</category>
+    <price>450.00</price>
+</book>
+
+<book>
+    <id>103</id>
+    <title>Python for Beginners</title>
+    <author>praveen</author>
+    <category>Programming</category>
+    <price>600.00</price>
+</book>
+
+<book>
+    <id>104</id>
+    <title>Database Management</title>
+    <author> Kumar</author>
+    <category>Database</category>
+    <price>500.00</price>
+</book>
+
+<book>
+    <id>105</id>
+    <title>HTML and CSS Guide</title>
+    <author>Alice</author>
+    <category>Web Development</category>
+    <price>400.00</price>
+</book>
+
+</books>
